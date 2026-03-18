@@ -1,1 +1,3 @@
-# a22408651_django
+Gonçalo Almeida; a22408651
+goncaloalmeida
+Password123
