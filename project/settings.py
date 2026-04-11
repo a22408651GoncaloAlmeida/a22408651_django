@@ -43,6 +43,13 @@ INSTALLED_APPS = [
     "receitas",
     "loja",
     "festivais",
+    'licenciatura',
+    'projetos',
+    'tecnologias',
+    'tfcs',
+    'competencias',
+    'formacoes',
+    'makingof',
 ]
 
 MIDDLEWARE = [
