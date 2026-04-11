@@ -16,7 +16,7 @@ class Licenciatura(models.Model):
 
 class Docente(models.Model):
     nome = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
+    email = models.EmailField(unique=True, blank=True)
     pagina_lusofona = models.URLField(blank=True)
 
     def __str__(self):
@@ -24,11 +24,17 @@ class Docente(models.Model):
 
 class UnidadeCurricular(models.Model):
     nome = models.CharField(max_length=100)
-    sigla = models.CharField(max_length=10)
+    sigla = models.CharField(max_length=20, blank=True)
+    codigo = models.CharField(max_length=20, blank=True)   # ex: ULHT260-1
     ects = models.IntegerField()
     ano = models.IntegerField()
-    semestre = models.IntegerField()
-    descricao = models.TextField(blank=True)
+    semestre = models.IntegerField(default=1)
+    natureza = models.CharField(max_length=50, blank=True)  # Mandatory/Optional
+    lingua = models.CharField(max_length=50, blank=True)
+    objetivos = models.TextField(blank=True)
+    programa = models.TextField(blank=True)
+    metodologia = models.TextField(blank=True)
+    bibliografia = models.TextField(blank=True)
     imagem = models.ImageField(upload_to='ucs/', blank=True)
     licenciatura = models.ForeignKey(
         Licenciatura,
