@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'competencias',
     'formacoes',
     'makingof',
+    'portfolio',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = "static/"
+
+# Ficheiros de media (imagens, ficheiros upload)
+import os
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

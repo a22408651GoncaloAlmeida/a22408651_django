@@ -1,0 +1,722 @@
+[
+  {
+    "titulo": "Assessing effectiveness of language models in Project Management Tasks",
+    "autores": "Alexandre Jose Silva Abdala Junior",
+    "orientador": "João Caldeira",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/tese_LeMGmVq.png",
+    "rating": 3
+  },
+  {
+    "titulo": "Comid: Identificação de Comunidades Online",
+    "autores": "Thiago Henrique Dos Santos",
+    "orientador": "Manuel Marques Pita",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/pip-comid.PNG",
+    "rating": 1
+  },
+  {
+    "titulo": "Cost Reduction and Optimization in Cloud Environments",
+    "autores": "João Pedro Matos",
+    "orientador": "Paulo Guedes, Pedro Perdigão",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/YT-Cloud-Computing-2.png",
+    "rating": 3
+  },
+  {
+    "titulo": "Energy Consumption Crawler",
+    "autores": "Gonçalo Cabeleira",
+    "orientador": "João Caldeira",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Screenshot_454.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Evolução dos Sistemas de Autenticação Forte: análise e implementação",
+    "autores": "Jilson Almeida Benjamim",
+    "orientador": "José Rogado",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Authentica%C3%A7%C3%A3ohibrida.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Identificação e Deteção em Tempo Real de Ameaças de Phishing em Aplicações de Mensagens Instantâneas",
+    "autores": "João Tiago Durães",
+    "orientador": "João Craveiro",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecra_2025-04-15_as_23.36.58.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Melhores Práticas Na Transformação Digital Das Pmes Portuguesas: Um Estudo De Caso Do Setor Do Turismo, Hotelaria E Restauração No Município Do Barreiro.",
+    "autores": "Valdemar Sebastião Buco",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/Melhores_Pr%C3%A1ticas_na_TD_das_PMEs._um_estudo_de_caso_no_STHRdocx.docx",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Transforma%C3%A7%C3%A3o_digital.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Ray Tracing and SSR: A Hybrid Approach",
+    "autores": "Leandro Brás",
+    "orientador": "Diogo de Andrade, Nuno Fachada",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Untitled.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Telemedicina Segura e Escalável – Uma Abordagem de Contentores e Microserviços",
+    "autores": "Ricardo Gonçalves",
+    "orientador": "Paulo Guedes, Wellington Oliveira",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/thesis.png",
+    "rating": 1
+  },
+  {
+    "titulo": "6G: Impact analysis and new business models in the 5th Industrial Revolution",
+    "autores": "Gilson Da Silva Ferreira",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/logoTese.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Adaptive Detection and Characterization of Plume-Dominated Wildfires",
+    "autores": "Afonso Oliveira",
+    "orientador": "João P. Matos-Carvalho, Nuno Fachada",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/plume-oriented.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Enterprise Rating for Information Systems",
+    "autores": "Mikael Saraiva",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/rating1.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Fall Detection and Fall Prevention",
+    "autores": "Jorge Leiria Pires",
+    "orientador": "Slaviša Tomić, Sérgio Duarte",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/fallimpact.jpeg",
+    "rating": 1
+  },
+  {
+    "titulo": "Graph-based Environment Generation",
+    "autores": "Diogo De Andrade",
+    "orientador": "Nuno Maria Carvalho Pereira Fernandes Fachada",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/sample7.png",
+    "rating": 1
+  },
+  {
+    "titulo": "IT security for an end user in an IoT structure",
+    "autores": "Silvana Chagas",
+    "orientador": "Nuno Ricardo Mateus Coelho",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/image_9.png",
+    "rating": 1
+  },
+  {
+    "titulo": "LLM-Based Clustering of Text Documents",
+    "autores": "Alina Petukhova",
+    "orientador": "João P. Matos-Carvalho, Nuno Fachada",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/front4.png",
+    "rating": 5
+  },
+  {
+    "titulo": "Medical Image Segmentation for Edge Device Deployment Using Compression Techniques.",
+    "autores": "Preyesse Arquissandás",
+    "orientador": "João P. Matos-Carvalho, Sérgio Duarte, Tiago Reis",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/image.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Patient-Centered Healthcare: A Framework for Analyzing Patient Feedback through Sentiment Analysis and Topic Modeling",
+    "autores": "Luis Osório",
+    "orientador": "Nuno Ricardo Mateus Coelho",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/233E8CE6-254B-4BCD-8252-F65A3C042669.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Simulation of Cyber Attacks in Industrial Control Systems Using Generative AI and Development of Anomaly Detection Mechanisms with Federated Learning",
+    "autores": "Veysel Alevcan",
+    "orientador": "Luís Miguel Campos",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/f1_comparison.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Simultaneous Wireless Information and Power Transfer",
+    "autores": "Vishalya Panchalinee Sooriarachchi",
+    "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara, Marko Beko",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/20250508_0926_Wireless_Power_Transfer_simple_compose_01jtqchrf6em2bnxfksn34mnre.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Terrestrial-Underwater Wireless Communication Networks with Self-Energized UAVs Utilizing THz/VLC for Enhanced Connectivity",
+    "autores": "Hanojhan Rajahrajasingh",
+    "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara, Marko Beko",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/PhDSM.JPG",
+    "rating": 1
+  },
+  {
+    "titulo": "The Role of Presence in Fostering Empathy in Virtual Environments",
+    "autores": "Maria Costa",
+    "orientador": "Micaela Fonseca, Phil Lopes",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Creative-Technology-girl-wearing-VR-Goggles.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Towards Autonomous and Trustworthy Vehicle Navigation in GNSS-denied Environments",
+    "autores": "Ricardo Serras Santos",
+    "orientador": "João P. Matos-Carvalho, Marko Beko, Slaviša Tomić",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Lusofona_12.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Towards a Trustworthy Conversational AI for Cybersecurity: A Proposal for a Knowledge-Augmented Architecture",
+    "autores": "André Filipe Marques Costa",
+    "orientador": "N/A",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/image_FJeFzRp.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Abordagens não supervisionadas para deteção de reviews falsas em plataformas de e-commerce",
+    "autores": "Nuno Santinhos",
+    "orientador": "Sofia Fernandes",
+    "licenciatura": "Licenciatura em Ciência de Dados.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_1%C2%BA_entrega.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Detecting-Fake-Reviews.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "AdvenTour",
+    "autores": "Gonçalo Neves, Lucas Botelho",
+    "orientador": "José Cascais Brás",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/AdvenTour.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicativo para gestão de voluntários e auxilio de associações de animais",
+    "autores": "Cátia Coelho",
+    "orientador": "Bruno Cipriano, Rodrigo Correia",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2116_AnimalTinder.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/imagemAplica%C3%A7%C3%A3o.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação Móvel de Audiolivros Infantis",
+    "autores": "Tomás Silva, Carlota Montalvão",
+    "orientador": "Lúcio Studer, Martim Mourão",
+    "licenciatura": "Licenciatura em Engenharia Informática. Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2107_audiolivros_intercalar.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/WhatsApp_Image_2025-03-27_at_18.07.01.jpeg",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação de controlo de assiduidade c/ terminal de picagem",
+    "autores": "Daniel Martins",
+    "orientador": "Rodrigo Correia",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2108_GEu06bK.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Aluno2108_W2fq16u.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação de técnicas de análise de dados para deteção de fugas e roturas em sistemas de distribuição de água",
+    "autores": "Wilson Silva",
+    "orientador": "Maria Silva",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2065.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Black-Color.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação móvel para rastreio da hepatite C",
+    "autores": "Miguel Santos, Ana Salvador",
+    "orientador": "Pedro Alves",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC__v1_yxdlD5j.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/icon_scaled.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação móvel para recomendação de carruagens de comboios e metros com base em informação de ocupação",
+    "autores": "Susana Wang",
+    "orientador": "Bruno Cipriano, Rodrigo Correia",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_1%C2%AAentregaIntercalar_SusanaW.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/image.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação móvel para registo e acompanhamento de queixas de mobilidade urbana",
+    "autores": "Rui Ferreira",
+    "orientador": "Pedro Alves",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/QueixaAquiRelat%C3%B3rioIntercalar.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2025-03-31_103307.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicação para identificação de competências de diretores e alunos da Univ. Lusófona",
+    "autores": "Miguel Melo, Rodrigo Dias",
+    "orientador": "Bruno Saraiva, Pedro Alves",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_a21905215_Miguel_Melo_a22205897_Rodrigo_Dias.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Hello_World.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Aplicações móveis para reabilitação",
+    "autores": "Mariana Livramento",
+    "orientador": "Pedro Alves, Sofia Naique",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_-_Aplica%C3%A7%C3%B5es_m%C3%B3veis_para_reabilita%C3%A7%C3%A3o_-_Mariana_Livramento.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/IMG_9307.jpeg",
+    "rating": 1
+  },
+  {
+    "titulo": "Auto Mecom Website ( Oficina de Reparação de Automóveis )",
+    "autores": "Beatriz Neves",
+    "orientador": "Rui Santos",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_Empresa2001_Relatorio_Intrecalar_1semestre.docx",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/automecon.png",
+    "rating": 4
+  },
+  {
+    "titulo": "Cibersegurança associada aos RPA",
+    "autores": "Rafael Silva, Henrique Franco",
+    "orientador": "José Cascais Brás",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_Intercalar_Entrega_1_Final.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/img.jpg",
+    "rating": 5
+  },
+  {
+    "titulo": "Classificação de Pacientes e Previsão de Tempos de Espera para Centro Hospitalar através de modelos Machine Learning",
+    "autores": "Ana Toscano",
+    "orientador": "Iolanda Velho, Sofia Naique",
+    "licenciatura": "Licenciatura em Ciência de Dados.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2058.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/cmra.png",
+    "rating": 4
+  },
+  {
+    "titulo": "Classificação do estado de funcionamento de uma eólica offshore recorrendo  a AI",
+    "autores": "Tiago Castro Mota",
+    "orientador": "Daniel Fernandes, João Pedro Carvalho",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC___Tiago_3.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/windfloat_1.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Comparação de Estratégias de Marketing Digital Baseadas em Redes Sociais para Pequenas e Médias Empresas (PMEs)",
+    "autores": "Perla Lima",
+    "orientador": "Fernando Angelino",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/Aluno2129.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/SMM.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Configurador Software Aviónico  e gerador de código fonte",
+    "autores": "Ricardo Costa Lopes",
+    "orientador": "Daniel Silveira",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2029_Configurador_Software_Avi%C3%B3nico_e_gerador_de_c%C3%B3digo.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/gmv.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Dashboard para Monitorização em Tempo Real da Produção e Consumo de Energia no Campus",
+    "autores": "Francisco Lucas",
+    "orientador": "Lúcio Studer, Martijn Kuipers",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2118.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/imagemPythonAnywhere.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Desenvolvimento em plataforma LowCode",
+    "autores": "Rodrigo Rodrigues, João Ferreira",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Engenharia Informática. Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2008.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/low-code.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Design and Implementation of a 6G Testbed for Pilot Planning",
+    "autores": "Luisa Ferreira",
+    "orientador": "Luís Campos",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/itrust6GentregaIntercalar.docx",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/logo.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Deteção de Microplásticos",
+    "autores": "Damien Nazário",
+    "orientador": "Daniel Fernandes, João Pedro Carvalho",
+    "licenciatura": "Licenciatura em Ciência de Dados.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_rik0Brg.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/PICA0374.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "DigiDoc – app inteligente de gerenciamento de documentos",
+    "autores": "Bruno Ramos",
+    "orientador": "Daniel Silveira, Martijn Kuipers",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2059_digidoc.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/icon.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Disentanglement in multiparty conversation",
+    "autores": "Daniel Nascimento, Pedro Prata",
+    "orientador": "Bruno Saraiva, Zuil Pirola",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI_Disentanglement.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/disentang.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Ferramenta de Anotação",
+    "autores": "Fábio Lopes",
+    "orientador": "Bruno Saraiva, Zuil Pirola",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/download.jpeg",
+    "rating": 1
+  },
+  {
+    "titulo": "Gestão de distribuição alimentar v2",
+    "autores": "Tiago Henrique Duarte Da Silva Jorge",
+    "orientador": "Luís Gomes",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/Relatorio_Intercalar_DEISI2042.docx",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/IMG_4272.jpeg",
+    "rating": 1
+  },
+  {
+    "titulo": "IMOinvestor: Inovação no Investimento Imobiliário (Back-end)",
+    "autores": "Akashpreet Singh, Gabriel Almeida",
+    "orientador": "Pedro Perdigão",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2044.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2044_LOGO.png",
+    "rating": 1
+  },
+  {
+    "titulo": "IMOinvestor: Inovação no Investimento Imobiliário – (Front-end – App & Web)",
+    "autores": "José Vale, Daniel Rodrigues",
+    "orientador": "Pedro Perdigão",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2043.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/download.jfif",
+    "rating": 4
+  },
+  {
+    "titulo": "IMOinvestor: Inovação no Investimento Imobiliário – (Front-end – App & Web)",
+    "autores": "José Maria Chaves Da Cunha De Lucena, Vale, Daniel Da Conceição Rodrigues",
+    "orientador": "Pedro Perdigão",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/1325.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/logotipo-lusofona_1NBSKWp.png",
+    "rating": 4
+  },
+  {
+    "titulo": "Identificação de arritmias via app",
+    "autores": "Sebastião Coelho",
+    "orientador": "Iolanda Velho, Lúcio Studer",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI22202310_ARRITMIAS_APP.docx",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/ppg.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Interface Azure para ERP",
+    "autores": "Tiago Amaro",
+    "orientador": "Luís Gomes",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2037.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Microsoft_Azure.svg.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Interface Azure para ERP",
+    "autores": "Tiago Amaro",
+    "orientador": "Luís Gomes",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2037_taZ6YdA.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Arquitetura_da_Solucao.png",
+    "rating": 1
+  },
+  {
+    "titulo": "IoT Lab2.0 – CGI – Indústria",
+    "autores": "Ricardo Borges, Samir Natvarlal",
+    "orientador": "José Cascais Brás, Rui Ribeiro",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2018.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/deisi14-iot_industria_gsg7jJ5.png",
+    "rating": 1
+  },
+  {
+    "titulo": "My Lessons : Gestão Inteligente de Escolas",
+    "autores": "Francisco Sousa",
+    "orientador": "Lúcio Studer, Martim Mourão",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/app_icon.png",
+    "rating": 1
+  },
+  {
+    "titulo": "NicePandora",
+    "autores": "Francisco Chambel",
+    "orientador": "Daniel Silveira, Pedro Serra",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2112_NicePandora.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2025-03-27_114213.png",
+    "rating": 1
+  },
+  {
+    "titulo": "OP – Opening Doors",
+    "autores": "Guilherme Ribeiro",
+    "orientador": "Daniel Fernandes, João Pedro Carvalho",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2079.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/istockphoto-1276559838-612x612.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Plataforma MentHA Digital, Mental Health and Aging",
+    "autores": "Tomás Nave, André Jesus",
+    "orientador": "Lúcio Studer",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2106.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/MentHA_LNEDj6R.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Plataforma de Cibersegurança Inteligente",
+    "autores": "Miguel Loureço, Vasco Pereira",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2027.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2027.webp",
+    "rating": 5
+  },
+  {
+    "titulo": "Plataforma de E-commerce Shopify",
+    "autores": "Bruno Rodrigues, Tânia Magalhães",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2007_Plataforma_e-commerce_Shopify.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/shopify.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Plataforma de Low-Code",
+    "autores": "Rodrigo Rodrigues, João Ferreira",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/low-code_eq2poc9.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Plataforma de Monitorização de Albufeiras",
+    "autores": "Ricardo Gonçalves, Ricardo Piedade",
+    "orientador": "Lúcio Studer, Martim Mourão",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2105_WATER-Wise_entrega1.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/web-app-manifest-512x512_hmnb8Wh.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Plataforma e-commerce Shopify",
+    "autores": "Bruno Gonçalo Branco Rodrigues, Tania Andreia Magalhaes",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/1295.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/imagem_5bCFc9Y.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Power Platform Digital Transformation",
+    "autores": "Ricardo Alexandre Gonçalves",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Captura_de_ecr%C3%A3_2025-04-13_184533.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Rede Social para a Comunidade Universitaria",
+    "autores": "Francisco Gomes, Mário Valentino",
+    "orientador": "Rui Santos",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_G2131_ON-CREATION.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/imagem_2025-03-28_214156582.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Segmentação de incêndios florestais",
+    "autores": "Francisco Perpétuo Alves",
+    "orientador": "Houda Harkat, João Pedro Carvalho",
+    "licenciatura": "Licenciatura em Ciência de Dados.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2057.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/mask.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Sistema Integrado de Gestão de Stocks",
+    "autores": "Fábio Tomé",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC_DEISI2425_Sistema_Integrado_de_Sistemas_de_Stocks.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Imagem.jpeg",
+    "rating": 1
+  },
+  {
+    "titulo": "Utilização de Inteligência Artificial no combate aos comportamentos aditivos e dependências",
+    "autores": "Afonso Amaral, João Carmona",
+    "orientador": "Iolanda Velho",
+    "licenciatura": "Licenciatura em Informática de Gestão.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/DEISI2113.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Ares_do_Pinal_Logo.png",
+    "rating": 5
+  },
+  {
+    "titulo": "i-Inflation",
+    "autores": "Gonçalo Barata, Maria Inês Silva",
+    "orientador": "Luís Miguel Campos",
+    "licenciatura": "Licenciatura em Ciência de Dados.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/TFC__Final.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/inflacao-800.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "iEquus",
+    "autores": "Duarte Chen",
+    "orientador": "Daniel Fernandes, João Pedro Carvalho",
+    "licenciatura": "Licenciatura em Engenharia Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/iEquus.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Artificial Landscape Generation through Ant Colony Behaviour",
+    "autores": "Flávio Santos",
+    "orientador": "Diogo de Andrade, João P. Matos-Carvalho, Nuno Fachada",
+    "licenciatura": "Mestrado em Engenharia Informática e Sistemas de Informação.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/LandscaperAnts_Thesis_versao_defendida.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/ants2-transparent-small.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Deteção rápida de AVC hemorrágico utilizando SERS e Machine Learning",
+    "autores": "João Eleutério",
+    "orientador": "Gabriela Soares, Lúcio Studer",
+    "licenciatura": "Mestrado em Ciências de Dados.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Capa_Relatorio_Joao_Eleuterio.png",
+    "rating": 4
+  },
+  {
+    "titulo": "Make Polarity Quantifiable Again – A Machine Learning Approach",
+    "autores": "Duarte Capinha, Jorge Botelho Moniz",
+    "orientador": "Iolanda Velho",
+    "licenciatura": "Mestrado em Ciências de Dados.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/capa_tese-1.png",
+    "rating": 4
+  },
+  {
+    "titulo": "Modelagem de expectativas dos colaboradores: fatores pessoais e profissionais que influenciam a decisão de permanência ótica do colaborador",
+    "autores": "Fátima Yausuf",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Mestrado em Ciências de Dados.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Capa_hZ5YvoY.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Modelos de Previsão da Rotatividade para a Retenção de Colaboradores",
+    "autores": "Beatriz Pereira",
+    "orientador": "Rui Ribeiro",
+    "licenciatura": "Mestrado em Ciências de Dados.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Disserta%C3%A7%C3%A3o_BeatrizPereira.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Transparência e Eficiência: Process Mining em Vendas Take-Away na Jerónimo Martins",
+    "autores": "André Capote",
+    "orientador": "João Caldeira, Lúcio Studer",
+    "licenciatura": "Mestrado em Ciências de Dados.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/Capa__Andr%C3%A9_Capote.jpg",
+    "rating": 1
+  },
+  {
+    "titulo": "Performance Analysis of Optical Wireless Communication System",
+    "autores": "Mohammad Furqan Ali",
+    "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "https://teses.deisi.ulusofona.pt/media/teses/10_March_Final_Lusofona_Submitted_Theis-2.pdf",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/opticalWireless_QfCAXQw.png",
+    "rating": 1
+  },
+  {
+    "titulo": "Re-Orienting Object-Oriented Programming Education: Automatic Assessment Tools and Large Language Models",
+    "autores": "Bruno Pereira Cipriano",
+    "orientador": "Pedro Hugo De Queirós Alves",
+    "licenciatura": "Doutoramento em Informática.  2025",
+    "link_pdf": "",
+    "imagem": "https://teses.deisi.ulusofona.pt/media/teses/venn_diagram.jpg",
+    "rating": 3
+  }
+]

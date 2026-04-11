@@ -3,10 +3,11 @@ from tecnologias.models import Tecnologia
 
 class TFC(models.Model):
     titulo = models.CharField(max_length=200)
-    descricao = models.TextField()
-    autor = models.CharField(max_length=100)
-    ano = models.IntegerField()
-    repositorio = models.URLField(blank=True)
+    autores = models.CharField(max_length=200, default='')
+    orientador = models.CharField(max_length=200, blank=True, default='')
+    licenciatura = models.CharField(max_length=200, blank=True, default='')
+    link_pdf = models.URLField(blank=True, default='')
+    imagem = models.URLField(blank=True, default='')
     destaque = models.BooleanField(default=False)
     classificacao = models.IntegerField(choices=[
         (1, '★'),
