@@ -37,19 +37,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "pessoas",
-    "escola",
-    "ginasio",
-    "receitas",
-    "loja",
-    "festivais",
-    'licenciatura',
-    'projetos',
-    'tecnologias',
-    'tfcs',
-    'competencias',
-    'formacoes',
-    'makingof',
     'portfolio',
 ]
 
@@ -128,9 +115,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+
 
 # Ficheiros de media (imagens, ficheiros upload)
 import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'), 
+]
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

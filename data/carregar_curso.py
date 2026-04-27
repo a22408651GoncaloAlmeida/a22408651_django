@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
 django.setup()
 
-from licenciatura.models import Licenciatura, UnidadeCurricular
+from portfolio.models import Licenciatura, UnidadeCurricular
 
 # Criar a licenciatura LEI se não existir
 licenciatura, _ = Licenciatura.objects.get_or_create(

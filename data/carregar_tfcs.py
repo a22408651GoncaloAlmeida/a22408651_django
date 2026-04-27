@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
 django.setup()
 
-from tfcs.models import TFC
+from portfolio.models import TFC
 
 # Caminho para o ficheiro JSON
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
