@@ -4,7 +4,6 @@ from .models import (
     Tecnologia, Projeto, Competencia, Conquista,
     Formacao,
     Licenciatura, Docente, UnidadeCurricular,
-    MakingOf, RegistoPapel, DecisaoModelacao, ErroCorrecao, UsoIA,
     TFC,
 )
 
@@ -65,38 +64,6 @@ class UnidadeCurricularAdmin(admin.ModelAdmin):
     list_filter = ('ano', 'semestre', 'licenciatura')
     search_fields = ('nome', 'sigla', 'codigo')
     filter_horizontal = ('docentes',)
-
-
-
-@admin.register(MakingOf)
-class MakingOfAdmin(admin.ModelAdmin):
-    list_display = ('entidade', 'titulo', 'data')
-    list_filter = ('entidade',)
-    search_fields = ('titulo',)
-
-
-@admin.register(RegistoPapel)
-class RegistoPapelAdmin(admin.ModelAdmin):
-    list_display = ('making_of', 'descricao')
-
-
-@admin.register(DecisaoModelacao)
-class DecisaoModelacaoAdmin(admin.ModelAdmin):
-    list_display = ('making_of', 'titulo')
-    search_fields = ('titulo',)
-
-
-@admin.register(ErroCorrecao)
-class ErroCorrecaoAdmin(admin.ModelAdmin):
-    list_display = ('making_of', 'data')
-    list_filter = ('data',)
-
-
-@admin.register(UsoIA)
-class UsoIAAdmin(admin.ModelAdmin):
-    list_display = ('ferramenta', 'making_of', 'data')
-    list_filter = ('ferramenta',)
-
 
 @admin.register(TFC)
 class TFCAdmin(admin.ModelAdmin):

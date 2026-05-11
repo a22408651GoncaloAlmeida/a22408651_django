@@ -78,6 +78,10 @@ class Competencia(models.Model):
         related_name='competencias'
     )
 
+    class Meta:
+        verbose_name = 'Competência'
+        verbose_name_plural = 'Competências'
+
     def __str__(self):
         return self.nome
 
@@ -128,6 +132,8 @@ class Formacao(models.Model):
 
     class Meta:
         ordering = ['-data_inicio']
+        verbose_name_plural = 'Formações'
+        verbose_name = 'Formação'
 
     def __str__(self):
         return self.nome
@@ -179,6 +185,10 @@ class UnidadeCurricular(models.Model):
         related_name='unidades_curriculares',
         blank=True
     )
+
+    class Meta:
+        verbose_name = 'Unidade Curricular'
+        verbose_name_plural = 'Unidades Curriculares'
 
     def __str__(self):
         return self.nome

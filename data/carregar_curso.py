@@ -1,7 +1,6 @@
 import os
 import sys
 import django
-import requests
 import json
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -21,36 +20,43 @@ licenciatura, _ = Licenciatura.objects.get_or_create(
     }
 )
 
-# Descarregar dados do curso
-url_curso = 'https://secure.ensinolusofona.pt/dados-publicos-academicos/resources/GetCourseDetail'
-payload = {'language': 'PT', 'courseCode': 260, 'schoolYear': '202526'}
-headers = {'content-type': 'application/json'}
-response = requests.post(url_curso, json=payload, headers=headers)
-curso = response.json()
+FILES_DIR = os.path.join(os.path.dirname(__file__), '..', 'files')
+
+# Ler o ficheiro do curso para obter a lista de UCs
+with open(os.path.join(FILES_DIR, 'ULHT260-PT.json'), encoding='utf-8') as f:
+    curso = json.load(f)
 
 ucs_carregadas = 0
+ucs_erros = 0
 
 for uc in curso['courseFlatPlan']:
     codigo = uc['curricularIUnitReadableCode']
+    filepath = os.path.join(FILES_DIR, f'{codigo}-PT.json')
 
-    # Descarregar detalhes da UC
-    url_uc = 'https://secure.ensinolusofona.pt/dados-publicos-academicos/resources/GetSIGESCurricularUnitDetails'
-    payload_uc = {'language': 'PT', 'curricularIUnitReadableCode': codigo}
-    response_uc = requests.post(url_uc, json=payload_uc, headers=headers)
-    dados = response_uc.json()
-
-    if dados.get('errorCode') != '0':
-        print(f"Erro na UC {codigo}")
+    if not os.path.exists(filepath):
+        print(f"Ficheiro não encontrado: {filepath}")
+        ucs_erros += 1
         continue
 
-    obj, created = UnidadeCurricular.objects.get_or_create(
+    with open(filepath, encoding='utf-8') as f:
+        dados = json.load(f)
+
+    if dados.get('errorCode') != '0':
+        print(f"Erro na UC {codigo}: errorCode={dados.get('errorCode')}")
+        ucs_erros += 1
+        continue
+
+    semestre_raw = uc.get('semester', uc.get('semestre', 1))
+    semestre = int(semestre_raw) if str(semestre_raw).isdigit() else 1
+
+    obj, created = UnidadeCurricular.objects.update_or_create(
         codigo=codigo,
         defaults={
             'nome': dados.get('curricularUnitName', ''),
-            'sigla': codigo,
-            'ects': dados.get('ects', 0),
-            'ano': dados.get('curricularYear', 1),
-            'semestre': 1,
+            'sigla': dados.get('curricularIUnitReadableCode', codigo),
+            'ects': dados.get('ects') or 0,
+            'ano': dados.get('curricularYear') or 1,
+            'semestre': semestre,
             'natureza': dados.get('nature', ''),
             'lingua': dados.get('language', ''),
             'objetivos': dados.get('objectives', ''),
@@ -61,8 +67,9 @@ for uc in curso['courseFlatPlan']:
         }
     )
 
+    status = "Criada" if created else "Atualizada"
+    print(f"[{status}] {codigo} — {dados.get('curricularUnitName', '?')}")
     if created:
         ucs_carregadas += 1
-        print(f"UC carregada: {dados.get('curricularUnitName')}")
 
-print(f"\n{ucs_carregadas} UCs carregadas com sucesso!")
+print(f"\n✅ {ucs_carregadas} UCs criadas | ⚠️ {ucs_erros} erros")
