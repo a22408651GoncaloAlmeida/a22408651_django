@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'portfolio_index' %}">🏠 Portfolio</a>
+        <a href="{% url 'tecnologias' %}">Tecnologias</a>
+        <a href="{% url 'projetos' %}">Projetos</a>
+        <a href="{% url 'competencias' %}">Competências</a>
+        <a href="{% url 'formacoes' %}">Formações</a>
+        <a href="{% url 'conquistas' %}">Conquistas</a>
+        <a href="{% url 'licenciaturas' %}">Licenciaturas</a>
+        <a href="{% url 'ucs' %}">UCs</a>
+        <a href="{% url 'tfcs' %}">TFCs</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

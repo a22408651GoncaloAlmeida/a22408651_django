@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Competências</title></head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}Competências{% endblock %}
+{% block content %}
     <h1>Competências</h1>
+    <a class="btn btn-primary" href="{% url 'competencia_criar' %}">+ Nova Competência</a>
+    <br><br>
     {% for c in competencias %}
-        <div>
-            <h2>{{ c.nome }}</h2>
-            <p>Tipo: {{ c.get_tipo_display }}</p>
-            <p>Nível: {{ c.get_nivel_display }}</p>
-            <p>{{ c.descricao }}</p>
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ c.nome }}</h2>
+                <p>Tipo: {{ c.get_tipo_display }} | Nível: {{ c.get_nivel_display }}</p>
+                <p>{{ c.descricao }}</p>
+            </div>
+            <div class="card-actions">
+                <a class="btn btn-edit" href="{% url 'competencia_editar' c.pk %}">Editar</a>
+                <a class="btn btn-delete" href="{% url 'competencia_apagar' c.pk %}">Apagar</a>
+            </div>
         </div>
     {% empty %}
         <p>Nenhuma competência encontrada.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

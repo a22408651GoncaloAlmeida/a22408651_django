@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Tecnologias</title>
-</head>
-<body>
-    <h1>Tecnologias</h1>
-    {% for t in tecnologias %}
-        <div>
-            <h2>{{ t.nome }}</h2>
-            <p>Categoria: {{ t.get_categoria_display }}</p>
-            <p>Nível: {{ t.get_nivel_interesse_display }}</p>
-            <p>{{ t.descricao }}</p>
+{% extends 'portfolio/base.html' %}
+{% block title %}Projetos{% endblock %}
+{% block content %}
+    <h1>Projetos</h1>
+    <a class="btn btn-primary" href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
+    <br><br>
+    {% for p in projetos %}
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ p.nome }}</h2>
+                <p>Ano: {{ p.ano }} | UC: {{ p.unidade_curricular }}</p>
+                <p>{{ p.descricao }}</p>
+                <p>Tecnologias: {% for t in p.tecnologias.all %}{{ t.nome }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+                {% if p.repositorio_github %}<a href="{{ p.repositorio_github }}">GitHub</a>{% endif %}
+                {% if p.video_demo %} | <a href="{{ p.video_demo }}">Demo</a>{% endif %}
+            </div>
+            <div class="card-actions">
+                <a class="btn btn-edit" href="{% url 'projeto_editar' p.pk %}">Editar</a>
+                <a class="btn btn-delete" href="{% url 'projeto_apagar' p.pk %}">Apagar</a>
+            </div>
         </div>
     {% empty %}
-        <p>Nenhuma tecnologia encontrada.</p>
+        <p>Nenhum projeto encontrado.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

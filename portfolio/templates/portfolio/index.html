@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"><title>Portfolio</title>
-</head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}Portfolio{% endblock %}
+{% block content %}
     <h1>Portfolio</h1>
-    <ul>
-        <li><a href="tecnologias/">Tecnologias</a></li>
-        <li><a href="projetos/">Projetos</a></li>
-        <li><a href="competencias/">Competências</a></li>
-        <li><a href="conquistas/">Conquistas</a></li>
-        <li><a href="formacoes/">Formações</a></li>
-        <li><a href="licenciaturas/">Licenciaturas</a></li>
-        <li><a href="docentes/">Docentes</a></li>
-        <li><a href="ucs/">Unidades Curriculares</a></li>
-        <li><a href="tfcs/">TFCs</a></li>
-    </ul>
-</body>
-</html>
+    <div class="index-grid">
+        <a class="index-card" href="{% url 'tecnologias' %}">💻 Tecnologias</a>
+        <a class="index-card" href="{% url 'projetos' %}">📁 Projetos</a>
+        <a class="index-card" href="{% url 'competencias' %}">🧠 Competências</a>
+        <a class="index-card" href="{% url 'conquistas' %}">🏆 Conquistas</a>
+        <a class="index-card" href="{% url 'formacoes' %}">🎓 Formações</a>
+        <a class="index-card" href="{% url 'licenciaturas' %}">🏫 Licenciaturas</a>
+        <a class="index-card" href="{% url 'docentes' %}">👨‍🏫 Docentes</a>
+        <a class="index-card" href="{% url 'ucs' %}">📚 Unidades Curriculares</a>
+        <a class="index-card" href="{% url 'tfcs' %}">📄 TFCs</a>
+    </div>
+{% endblock %}

@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Tecnologias</title>
-</head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}Tecnologias{% endblock %}
+{% block content %}
     <h1>Tecnologias</h1>
+    <a class="btn btn-primary" href="{% url 'tecnologia_criar' %}">+ Nova Tecnologia</a>
+    <br><br>
     {% for t in tecnologias %}
-        <div>
-            <h2>{{ t.nome }}</h2>
-            <p>Categoria: {{ t.get_categoria_display }}</p>
-            <p>Nível: {{ t.get_nivel_interesse_display }}</p>
-            <p>{{ t.descricao }}</p>
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ t.nome }}</h2>
+                <p>Categoria: {{ t.get_categoria_display }} | Nível: {{ t.get_nivel_interesse_display }}</p>
+                <p>{{ t.descricao }}</p>
+                {% if t.website %}<a href="{{ t.website }}">Website</a>{% endif %}
+            </div>
+            <div class="card-actions">
+                <a class="btn btn-edit" href="{% url 'tecnologia_editar' t.pk %}">Editar</a>
+                <a class="btn btn-delete" href="{% url 'tecnologia_apagar' t.pk %}">Apagar</a>
+            </div>
         </div>
     {% empty %}
         <p>Nenhuma tecnologia encontrada.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
