@@ -140,3 +140,12 @@ def ucs_view(request):
 def tfcs_view(request):
     tfcs = TFC.objects.prefetch_related('tecnologias').all()
     return render(request, 'portfolio/tfcs.html', {'tfcs': tfcs})
+
+def sobre_view(request):
+    from .models import MakingOf, Tecnologia
+    makingofs = MakingOf.objects.prefetch_related('decisoes', 'erros', 'usos_ia', 'registos_papel').all()
+    tecnologias = Tecnologia.objects.all().order_by('categoria')
+    return render(request, 'portfolio/sobre.html', {
+        'makingofs': makingofs,
+        'tecnologias': tecnologias,
+    })

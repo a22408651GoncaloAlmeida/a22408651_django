@@ -1,0 +1,207 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Sobre esta Aplicação{% endblock %}
+{% block content %}
+
+<h1>Sobre esta Aplicação</h1>
+
+<!-- ── 1. ARQUITETURA MVT ─────────────────────────────────────────── -->
+<section class="sobre-section">
+    <h2>1. Arquitetura MVT do Django</h2>
+    <p>
+        O Django segue o padrão <strong>MVT (Model-View-Template)</strong>, uma variante do padrão MVC adaptada ao framework.
+    </p>
+
+    <div class="mvt-grid">
+        <div class="mvt-card">
+            <h3>Model</h3>
+            <p>Define a estrutura dos dados e comunica com a base de dados. Cada modelo corresponde a uma tabela na BD. Exemplos: <code>Projeto</code>, <code>Tecnologia</code>, <code>UnidadeCurricular</code>.</p>
+        </div>
+        <div class="mvt-card">
+            <h3>View</h3>
+            <p>Contém a lógica de negócio. Recebe um pedido HTTP, interage com os modelos, e devolve uma resposta — normalmente renderizando um template com dados.</p>
+        </div>
+        <div class="mvt-card">
+            <h3>Template</h3>
+            <p>Ficheiros HTML com linguagem de template Django. Recebem dados da view e geram o HTML final enviado ao browser.</p>
+        </div>
+    </div>
+
+    <h3 style="margin-top:1.5rem">Fluxo de informação</h3>
+    <ol class="fluxo-list">
+        <li><strong>Browser</strong> envia um pedido HTTP (ex: GET /portfolio/projetos/)</li>
+        <li><strong>urls.py</strong> faz o mapeamento para a view correspondente</li>
+        <li><strong>View</strong> consulta o Model para obter os dados necessários</li>
+        <li><strong>Model</strong> executa queries à base de dados e devolve os dados</li>
+        <li><strong>View</strong> passa os dados ao Template</li>
+        <li><strong>Template</strong> gera o HTML final</li>
+        <li><strong>Browser</strong> recebe e renderiza a resposta HTML</li>
+    </ol>
+
+    <div class="foto-placeholder">
+        <p>📷 <em>Insere aqui a fotografia do desenho em papel da arquitetura MVT</em></p>
+        <!-- Quando tiveres a foto: -->
+        <!-- {% load static %} -->
+        <!-- <img src="{% static 'portfolio/img/mvt_papel.jpg' %}" alt="Arquitetura MVT" style="max-width:100%"> -->
+    </div>
+
+    <h3 style="margin-top:1.5rem">Vídeo-tutorial: Criar um novo projeto</h3>
+    <div class="iframe-container">
+        <p><em>Insere aqui o link do vídeo quando estiver disponível:</em></p>
+        <!-- <iframe width="560" height="315" src="URL_DO_VIDEO" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+</section>
+
+<!-- ── 2. MODELAÇÃO ───────────────────────────────────────────────── -->
+<section class="sobre-section">
+    <h2>2. Modelação</h2>
+
+    <div class="foto-placeholder">
+        <p>📷 <em>Insere aqui a fotografia do diagrama entidade-relação em papel</em></p>
+        <!-- <img src="{% static 'portfolio/img/der_papel.jpg' %}" alt="Diagrama ER" style="max-width:100%"> -->
+    </div>
+
+    <h3 style="margin-top:1.5rem">models.py</h3>
+    <pre class="code-block">
+class Tecnologia(models.Model):
+    nome = models.CharField(max_length=100)
+    categoria = models.CharField(max_length=20, choices=CATEGORIA_CHOICES)
+    descricao = models.TextField(blank=True)
+    nivel_interesse = models.IntegerField(choices=NIVEL_CHOICES, default=3)
+
+class Projeto(models.Model):
+    nome = models.CharField(max_length=100)
+    descricao = models.TextField()
+    ano = models.IntegerField()
+    unidade_curricular = models.ForeignKey('UnidadeCurricular', ...)
+    tecnologias = models.ManyToManyField('Tecnologia', ...)
+
+class UnidadeCurricular(models.Model):
+    nome = models.CharField(max_length=100)
+    ects = models.IntegerField()
+    ano = models.IntegerField()
+    licenciatura = models.ForeignKey('Licenciatura', ...)
+
+# ... e mais modelos: Competencia, Conquista, Formacao, TFC, MakingOf
+    </pre>
+</section>
+
+<!-- ── 3. TECNOLOGIAS ─────────────────────────────────────────────── -->
+<section class="sobre-section">
+    <h2>3. Tecnologias Utilizadas</h2>
+
+    {% regroup tecnologias by get_categoria_display as tecnologias_por_categoria %}
+    {% for grupo in tecnologias_por_categoria %}
+        <h3 class="tech-grupo">{{ grupo.grouper }}</h3>
+        <div class="tech-grid">
+            {% for t in grupo.list %}
+                <div class="tech-card">
+                    <h4>{{ t.nome }}</h4>
+                    {% if t.descricao %}<p>{{ t.descricao }}</p>{% endif %}
+                    {% if t.website %}<a href="{{ t.website }}" target="_blank">Website</a>{% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% empty %}
+        <p>Nenhuma tecnologia registada. <a href="{% url 'tecnologia_criar' %}">Adicionar tecnologia</a></p>
+    {% endfor %}
+</section>
+
+<!-- ── 4. ESTRUTURA DE NAVEGAÇÃO ──────────────────────────────────── -->
+<section class="sobre-section">
+    <h2>4. Estrutura de Navegação</h2>
+    <div class="foto-placeholder">
+        <p>📷 <em>Insere aqui o desenho do mapa de navegação da aplicação</em></p>
+    </div>
+    <ul class="nav-tree">
+        <li>/ (raiz)
+            <ul>
+                <li>/admin/</li>
+                <li>/portfolio/
+                    <ul>
+                        <li>tecnologias/ — criar/, &lt;pk&gt;/editar/, &lt;pk&gt;/apagar/</li>
+                        <li>projetos/ — criar/, &lt;pk&gt;/editar/, &lt;pk&gt;/apagar/</li>
+                        <li>competencias/ — criar/, &lt;pk&gt;/editar/, &lt;pk&gt;/apagar/</li>
+                        <li>formacoes/ — criar/, &lt;pk&gt;/editar/, &lt;pk&gt;/apagar/</li>
+                        <li>conquistas/</li>
+                        <li>licenciaturas/</li>
+                        <li>docentes/</li>
+                        <li>ucs/</li>
+                        <li>tfcs/</li>
+                        <li>sobre/</li>
+                    </ul>
+                </li>
+                <li>/escola/
+                    <ul>
+                        <li>cursos/</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<!-- ── 5. REPOSITÓRIO GITHUB ──────────────────────────────────────── -->
+<section class="sobre-section">
+    <h2>5. Repositório GitHub</h2>
+    <p>
+        O código desta aplicação está disponível em:
+        <a href="https://github.com/a22408651GoncaloAlmeida/a22408651_django" target="_blank">
+            github.com/a22408651GoncaloAlmeida/a22408651_django
+        </a>
+    </p>
+    <h3 style="margin-top:1rem">Como foi utilizado</h3>
+    <p>
+        O GitHub foi usado para versionar o código ao longo do desenvolvimento, permitindo guardar o histórico de alterações e recuperar versões anteriores em caso de erro. Cada funcionalidade foi desenvolvida e depois commitada com uma mensagem descritiva.
+    </p>
+    <h3 style="margin-top:1rem">Vantagens</h3>
+    <ul class="vantagens-list">
+        <li>Histórico completo de todas as alterações feitas ao código</li>
+        <li>Possibilidade de reverter para versões anteriores</li>
+        <li>Integração com GitHub Codespaces para desenvolvimento na cloud</li>
+        <li>Facilita colaboração em equipa</li>
+        <li>Backup automático do código</li>
+    </ul>
+</section>
+
+<!-- ── 6. MAKING OF ───────────────────────────────────────────────── -->
+<section class="sobre-section">
+    <h2>6. Making Of</h2>
+    <p>
+        Esta secção documenta o processo de desenvolvimento da aplicação — decisões de modelação, erros encontrados e corrigidos, e uso de IA generativa.
+    </p>
+    {% for mo in makingofs %}
+        <div class="card" style="flex-direction:column">
+            <div class="card-info">
+                <h3>{{ mo.get_entidade_display }} — {{ mo.titulo }}</h3>
+                <p style="color:#888;font-size:0.85rem">{{ mo.data }}</p>
+                <p>{{ mo.descricao }}</p>
+
+                {% if mo.decisoes.all %}
+                    <h4>Decisões de Modelação</h4>
+                    {% for d in mo.decisoes.all %}
+                        <p><strong>{{ d.titulo }}</strong> — {{ d.justificacao }}</p>
+                    {% endfor %}
+                {% endif %}
+
+                {% if mo.erros.all %}
+                    <h4>Erros & Correções</h4>
+                    {% for e in mo.erros.all %}
+                        <p><strong>Erro:</strong> {{ e.descricao_erro }}<br>
+                        <strong>Correção:</strong> {{ e.correcao_aplicada }}</p>
+                    {% endfor %}
+                {% endif %}
+
+                {% if mo.usos_ia.all %}
+                    <h4>Uso de IA</h4>
+                    {% for ia in mo.usos_ia.all %}
+                        <p><strong>{{ ia.ferramenta }}</strong> — {{ ia.descricao_uso }}</p>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    {% empty %}
+        <p>Nenhum making of registado ainda. <a href="/admin/portfolio/makingof/add/">Adicionar no admin</a></p>
+    {% endfor %}
+</section>
+
+{% endblock %}
