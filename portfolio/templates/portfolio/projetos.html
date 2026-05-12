@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecnologias</title>
+</head>
+<body>
+    <h1>Tecnologias</h1>
+    {% for t in tecnologias %}
+        <div>
+            <h2>{{ t.nome }}</h2>
+            <p>Categoria: {{ t.get_categoria_display }}</p>
+            <p>Nível: {{ t.get_nivel_interesse_display }}</p>
+            <p>{{ t.descricao }}</p>
+        </div>
+    {% empty %}
+        <p>Nenhuma tecnologia encontrada.</p>
+    {% endfor %}
+</body>
+</html>

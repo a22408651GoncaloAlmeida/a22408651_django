@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Docentes</title></head>
+<body>
+    <h1>Docentes</h1>
+    {% for d in docentes %}
+        <div>
+            <h2>{{ d.nome }}</h2>
+            {% if d.email %}<p>Email: {{ d.email }}</p>{% endif %}
+            {% if d.pagina_lusofona %}<p><a href="{{ d.pagina_lusofona }}">Página Lusófona</a></p>{% endif %}
+        </div>
+    {% empty %}
+        <p>Nenhum docente encontrado.</p>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Competências</title></head>
+<body>
+    <h1>Competências</h1>
+    {% for c in competencias %}
+        <div>
+            <h2>{{ c.nome }}</h2>
+            <p>Tipo: {{ c.get_tipo_display }}</p>
+            <p>Nível: {{ c.get_nivel_display }}</p>
+            <p>{{ c.descricao }}</p>
+        </div>
+    {% empty %}
+        <p>Nenhuma competência encontrada.</p>
+    {% endfor %}
+</body>
+</html>

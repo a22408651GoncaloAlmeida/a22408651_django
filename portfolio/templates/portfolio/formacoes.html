@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Formações</title></head>
+<body>
+    <h1>Formações</h1>
+    {% for f in formacoes %}
+        <div>
+            <h2>{{ f.nome }}</h2>
+            <p>Instituição: {{ f.instituicao }}</p>
+            <p>Tipo: {{ f.get_tipo_display }}</p>
+            <p>Início: {{ f.data_inicio }}</p>
+            {% if f.data_fim %}<p>Fim: {{ f.data_fim }}</p>{% endif %}
+            <p>{{ f.descricao }}</p>
+        </div>
+    {% empty %}
+        <p>Nenhuma formação encontrada.</p>
+    {% endfor %}
+</body>
+</html>

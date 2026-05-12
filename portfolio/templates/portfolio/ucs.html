@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Unidades Curriculares</title></head>
+<body>
+    <h1>Unidades Curriculares</h1>
+    {% for uc in ucs %}
+        <div>
+            <h2>{{ uc.nome }} ({{ uc.sigla }})</h2>
+            <p>Código: {{ uc.codigo }}</p>
+            <p>Ano: {{ uc.ano }}º | Semestre: {{ uc.semestre }}º</p>
+            <p>ECTS: {{ uc.ects }}</p>
+            <p>Licenciatura: {{ uc.licenciatura }}</p>
+            <p>Natureza: {{ uc.natureza }}</p>
+            <p>Língua: {{ uc.lingua }}</p>
+        </div>
+    {% empty %}
+        <p>Nenhuma unidade curricular encontrada.</p>
+    {% endfor %}
+</body>
+</html>

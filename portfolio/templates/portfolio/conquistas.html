@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Conquistas</title></head>
+<body>
+    <h1>Conquistas</h1>
+    {% for c in conquistas %}
+        <div>
+            <h2>{{ c.titulo }}</h2>
+            <p>Tipo: {{ c.get_tipo_display }}</p>
+            <p>Data: {{ c.data }}</p>
+            <p>Entidade: {{ c.entidade_organizadora }}</p>
+            <p>{{ c.descricao }}</p>
+        </div>
+    {% empty %}
+        <p>Nenhuma conquista encontrada.</p>
+    {% endfor %}
+</body>
+</html>

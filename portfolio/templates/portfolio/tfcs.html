@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>TFCs</title></head>
+<body>
+    <h1>TFCs</h1>
+    {% for t in tfcs %}
+        <div>
+            <h2>{{ t.titulo }}</h2>
+            <p>Autores: {{ t.autores }}</p>
+            <p>Orientador: {{ t.orientador }}</p>
+            <p>Licenciatura: {{ t.licenciatura }}</p>
+            <p>Classificação: {{ t.get_classificacao_display }}</p>
+            <p>Tecnologias: {% for tec in t.tecnologias.all %}{{ tec.nome }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+            {% if t.link_pdf %}<p><a href="{{ t.link_pdf }}">Ver PDF</a></p>{% endif %}
+        </div>
+    {% empty %}
+        <p>Nenhum TFC encontrado.</p>
+    {% endfor %}
+</body>
+</html>
