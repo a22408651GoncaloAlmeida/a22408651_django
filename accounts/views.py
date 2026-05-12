@@ -4,6 +4,7 @@ from .forms import RegistoForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
 from .models import MagicLink
+from django.contrib.auth.models import Group
 
 def login_view(request):
     erro = None
@@ -25,7 +26,9 @@ def logout_view(request):
 def registo_view(request):
     form = RegistoForm(request.POST or None)
     if form.is_valid():
-        form.save()
+        user = form.save()
+        grupo, _ = Group.objects.get_or_create(name='autores')
+        user.groups.add(grupo)
         return redirect('login')
     return render(request, 'accounts/registo.html', {'form': form})
 

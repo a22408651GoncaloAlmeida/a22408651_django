@@ -1,0 +1,34 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Artigos{% endblock %}
+{% block content %}
+    <h1>Artigos</h1>
+    {% if é_autor %}
+        <a class="btn btn-primary" href="{% url 'artigo_criar' %}">+ Novo Artigo</a>
+        <br><br>
+    {% endif %}
+    {% for a in artigos %}
+        <div class="card" style="flex-direction:column">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div class="card-info">
+                    <h2><a href="{% url 'artigo_detalhe' a.pk %}" style="text-decoration:none;color:#1a1a2e">{{ a.titulo }}</a></h2>
+                    <p>Por <strong>{{ a.autor.username }}</strong> | {{ a.data_criacao|date:"d/m/Y" }}</p>
+                    <p>{{ a.texto|truncatewords:30 }}</p>
+                    {% if a.link_externo %}<a href="{{ a.link_externo }}" target="_blank">🔗 Link externo</a>{% endif %}
+                    <p>❤️ {{ a.total_likes }} likes | 💬 {{ a.comentarios.count }} comentários</p>
+                </div>
+                {% if a.fotografia %}
+                    <img src="{{ a.fotografia.url }}" style="width:120px;height:90px;object-fit:cover;border-radius:8px;margin-left:1rem">
+                {% endif %}
+            </div>
+            <div style="display:flex;gap:0.5rem;margin-top:0.75rem">
+                <a class="btn btn-primary" href="{% url 'artigo_detalhe' a.pk %}">Ler mais</a>
+                {% if request.user == a.autor %}
+                    <a class="btn btn-edit" href="{% url 'artigo_editar' a.pk %}">Editar</a>
+                    <a class="btn btn-delete" href="{% url 'artigo_apagar' a.pk %}">Apagar</a>
+                {% endif %}
+            </div>
+        </div>
+    {% empty %}
+        <p>Nenhum artigo publicado ainda.</p>
+    {% endfor %}
+{% endblock %}

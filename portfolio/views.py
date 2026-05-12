@@ -8,7 +8,7 @@ from .models import (
 )
 
 def é_gestor(user):
-    return user.groups.filter(name='gestor-portfolio').exists()
+    return user.is_superuser or user.groups.filter(name='gestor-portfolio').exists()
 
 # ── INDEX ──────────────────────────────────────────────────────────────────
 def index_view(request):

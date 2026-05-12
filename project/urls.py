@@ -28,6 +28,7 @@ urlpatterns = [
     path("", include("escola.urls")),  #  rota para app escola sem precisar de escrever "escola"
     path('portfolio/', include('portfolio.urls')),
     path('accounts/', include('accounts.urls')),
+    path('artigos/', include('artigos.urls')),
 ]
 
 # Serve ficheiros media em DEBUG

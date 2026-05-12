@@ -1,0 +1,15 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}{{ titulo }}{% endblock %}
+{% block content %}
+    <h1>{{ titulo }}</h1>
+    <div class="confirm-box">
+        <p>Tens a certeza que queres apagar <strong>{{ objeto }}</strong>?</p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-actions">
+                <button class="btn btn-delete" type="submit">Sim, apagar</button>
+                <a class="btn btn-primary" href="javascript:history.back()">Cancelar</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
