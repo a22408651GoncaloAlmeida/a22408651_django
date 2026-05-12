@@ -2,8 +2,10 @@
 {% block title %}Competências{% endblock %}
 {% block content %}
     <h1>Competências</h1>
-    <a class="btn btn-primary" href="{% url 'competencia_criar' %}">+ Nova Competência</a>
-    <br><br>
+    {% if é_gestor %}
+        <a class="btn btn-primary" href="{% url 'competencia_criar' %}">+ Nova Competência</a>
+        <br><br>
+    {% endif %}
     {% for c in competencias %}
         <div class="card">
             <div class="card-info">
@@ -11,10 +13,12 @@
                 <p>Tipo: {{ c.get_tipo_display }} | Nível: {{ c.get_nivel_display }}</p>
                 <p>{{ c.descricao }}</p>
             </div>
+            {% if é_gestor %}
             <div class="card-actions">
                 <a class="btn btn-edit" href="{% url 'competencia_editar' c.pk %}">Editar</a>
                 <a class="btn btn-delete" href="{% url 'competencia_apagar' c.pk %}">Apagar</a>
             </div>
+            {% endif %}
         </div>
     {% empty %}
         <p>Nenhuma competência encontrada.</p>

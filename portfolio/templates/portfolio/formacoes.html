@@ -2,8 +2,10 @@
 {% block title %}Formações{% endblock %}
 {% block content %}
     <h1>Formações</h1>
-    <a class="btn btn-primary" href="{% url 'formacao_criar' %}">+ Nova Formação</a>
-    <br><br>
+    {% if é_gestor %}
+        <a class="btn btn-primary" href="{% url 'formacao_criar' %}">+ Nova Formação</a>
+        <br><br>
+    {% endif %}
     {% for f in formacoes %}
         <div class="card">
             <div class="card-info">
@@ -12,10 +14,12 @@
                 <p>Início: {{ f.data_inicio }}{% if f.data_fim %} | Fim: {{ f.data_fim }}{% endif %}</p>
                 <p>{{ f.descricao }}</p>
             </div>
+            {% if é_gestor %}
             <div class="card-actions">
                 <a class="btn btn-edit" href="{% url 'formacao_editar' f.pk %}">Editar</a>
                 <a class="btn btn-delete" href="{% url 'formacao_apagar' f.pk %}">Apagar</a>
             </div>
+            {% endif %}
         </div>
     {% empty %}
         <p>Nenhuma formação encontrada.</p>

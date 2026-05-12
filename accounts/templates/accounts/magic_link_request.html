@@ -1,0 +1,17 @@
+{% extends 'accounts/base_accounts.html' %}
+{% block title %}Acesso por Link{% endblock %}
+{% block content %}
+    <h1>Acesso por Link Mágico</h1>
+    {% if sucesso %}
+        <div style="background:#e0ffe0;color:#060;padding:0.75rem;border-radius:5px;margin-bottom:1rem">{{ sucesso }}</div>
+    {% endif %}
+    {% if erro %}
+        <div class="erro">{{ erro }}</div>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <p><label>Email</label><input type="email" name="email" required></p>
+        <button class="btn btn-primary" type="submit">Enviar Link</button>
+    </form>
+    <div class="link"><a href="{% url 'login' %}">Voltar ao login normal</a></div>
+{% endblock %}

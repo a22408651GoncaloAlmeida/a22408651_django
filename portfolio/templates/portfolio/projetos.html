@@ -2,8 +2,10 @@
 {% block title %}Projetos{% endblock %}
 {% block content %}
     <h1>Projetos</h1>
-    <a class="btn btn-primary" href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
-    <br><br>
+    {% if é_gestor %}
+        <a class="btn btn-primary" href="{% url 'projeto_criar' %}">+ Novo Projeto</a>
+        <br><br>
+    {% endif %}
     {% for p in projetos %}
         <div class="card">
             <div class="card-info">
@@ -14,10 +16,12 @@
                 {% if p.repositorio_github %}<a href="{{ p.repositorio_github }}">GitHub</a>{% endif %}
                 {% if p.video_demo %} | <a href="{{ p.video_demo }}">Demo</a>{% endif %}
             </div>
+            {% if é_gestor %}
             <div class="card-actions">
                 <a class="btn btn-edit" href="{% url 'projeto_editar' p.pk %}">Editar</a>
                 <a class="btn btn-delete" href="{% url 'projeto_apagar' p.pk %}">Apagar</a>
             </div>
+            {% endif %}
         </div>
     {% empty %}
         <p>Nenhum projeto encontrado.</p>

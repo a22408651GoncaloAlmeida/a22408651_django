@@ -1,0 +1,7 @@
+{% extends 'accounts/base_accounts.html' %}
+{% block title %}Erro{% endblock %}
+{% block content %}
+    <h1>Erro</h1>
+    <div class="erro">{{ erro }}</div>
+    <div class="link"><a href="{% url 'magic_link_request' %}">Tentar novamente</a></div>
+{% endblock %}

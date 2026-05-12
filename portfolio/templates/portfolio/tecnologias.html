@@ -2,8 +2,10 @@
 {% block title %}Tecnologias{% endblock %}
 {% block content %}
     <h1>Tecnologias</h1>
-    <a class="btn btn-primary" href="{% url 'tecnologia_criar' %}">+ Nova Tecnologia</a>
-    <br><br>
+    {% if é_gestor %}
+        <a class="btn btn-primary" href="{% url 'tecnologia_criar' %}">+ Nova Tecnologia</a>
+        <br><br>
+    {% endif %}
     {% for t in tecnologias %}
         <div class="card">
             <div class="card-info">
@@ -12,10 +14,12 @@
                 <p>{{ t.descricao }}</p>
                 {% if t.website %}<a href="{{ t.website }}">Website</a>{% endif %}
             </div>
+            {% if é_gestor %}
             <div class="card-actions">
                 <a class="btn btn-edit" href="{% url 'tecnologia_editar' t.pk %}">Editar</a>
                 <a class="btn btn-delete" href="{% url 'tecnologia_apagar' t.pk %}">Apagar</a>
             </div>
+            {% endif %}
         </div>
     {% empty %}
         <p>Nenhuma tecnologia encontrada.</p>

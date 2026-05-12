@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'portfolio',
     'escola',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,15 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/portfolio/'
+
+# autenticação via link mágico
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'goncalmeida06@gmail.com'  # substitui pelo teu Gmail
+EMAIL_HOST_PASSWORD = 'tcuo kszk qhts ytyg'  # a senha de 16 caracteres (com ou sem espaços)
+DEFAULT_FROM_EMAIL = 'goncalmeida06@gmail.com'
