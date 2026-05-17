@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>TFCs</title></head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}TFCs{% endblock %}
+{% block content %}
     <h1>TFCs</h1>
     {% for t in tfcs %}
-        <div>
-            <h2>{{ t.titulo }}</h2>
-            <p>Autores: {{ t.autores }}</p>
-            <p>Orientador: {{ t.orientador }}</p>
-            <p>Licenciatura: {{ t.licenciatura }}</p>
-            <p>Classificação: {{ t.get_classificacao_display }}</p>
-            <p>Tecnologias: {% for tec in t.tecnologias.all %}{{ tec.nome }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
-            {% if t.link_pdf %}<p><a href="{{ t.link_pdf }}">Ver PDF</a></p>{% endif %}
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ t.titulo }}</h2>
+                <p>Autores: {{ t.autores }}</p>
+                <p>Orientador: {{ t.orientador }}</p>
+                <p>Licenciatura: {{ t.licenciatura }}</p>
+                <p>Classificação: {{ t.get_classificacao_display }}</p>
+                <p>Tecnologias: {% for tec in t.tecnologias.all %}{{ tec.nome }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+                {% if t.link_pdf %}<a href="{{ t.link_pdf }}" target="_blank">Ver PDF</a>{% endif %}
+            </div>
         </div>
     {% empty %}
         <p>Nenhum TFC encontrado.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

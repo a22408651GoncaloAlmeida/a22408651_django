@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Licenciaturas</title></head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}Licenciaturas{% endblock %}
+{% block content %}
     <h1>Licenciaturas</h1>
     {% for l in licenciaturas %}
-        <div>
-            <h2>{{ l.nome }} ({{ l.sigla }})</h2>
-            <p>ECTS totais: {{ l.ects_totais }}</p>
-            <p>Duração: {{ l.duracao_anos }} anos</p>
-            <p>Regime: {{ l.get_regime_display }}</p>
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ l.nome }} ({{ l.sigla }})</h2>
+                <p>ECTS totais: {{ l.ects_totais }} | Duração: {{ l.duracao_anos }} anos</p>
+                <p>Regime: {{ l.get_regime_display }}</p>
+            </div>
         </div>
     {% empty %}
         <p>Nenhuma licenciatura encontrada.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

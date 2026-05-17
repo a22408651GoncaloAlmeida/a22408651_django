@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Unidades Curriculares</title></head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}Unidades Curriculares{% endblock %}
+{% block content %}
     <h1>Unidades Curriculares</h1>
     {% for uc in ucs %}
-        <div>
-            <h2>{{ uc.nome }} ({{ uc.sigla }})</h2>
-            <p>Código: {{ uc.codigo }}</p>
-            <p>Ano: {{ uc.ano }}º | Semestre: {{ uc.semestre }}º</p>
-            <p>ECTS: {{ uc.ects }}</p>
-            <p>Licenciatura: {{ uc.licenciatura }}</p>
-            <p>Natureza: {{ uc.natureza }}</p>
-            <p>Língua: {{ uc.lingua }}</p>
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ uc.nome }} ({{ uc.sigla }})</h2>
+                <p>Código: {{ uc.codigo }} | Ano: {{ uc.ano }}º | Semestre: {{ uc.semestre }}º</p>
+                <p>ECTS: {{ uc.ects }} | Licenciatura: {{ uc.licenciatura }}</p>
+                <p>Natureza: {{ uc.natureza }} | Língua: {{ uc.lingua }}</p>
+            </div>
         </div>
     {% empty %}
         <p>Nenhuma unidade curricular encontrada.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

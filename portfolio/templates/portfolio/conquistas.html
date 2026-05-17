@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>Conquistas</title></head>
-<body>
+{% extends 'portfolio/base.html' %}
+{% block title %}Conquistas{% endblock %}
+{% block content %}
     <h1>Conquistas</h1>
     {% for c in conquistas %}
-        <div>
-            <h2>{{ c.titulo }}</h2>
-            <p>Tipo: {{ c.get_tipo_display }}</p>
-            <p>Data: {{ c.data }}</p>
-            <p>Entidade: {{ c.entidade_organizadora }}</p>
-            <p>{{ c.descricao }}</p>
+        <div class="card">
+            <div class="card-info">
+                <h2>{{ c.titulo }}</h2>
+                <p>Tipo: {{ c.get_tipo_display }} | Data: {{ c.data }}</p>
+                <p>Entidade: {{ c.entidade_organizadora }}</p>
+                <p>{{ c.descricao }}</p>
+            </div>
         </div>
     {% empty %}
         <p>Nenhuma conquista encontrada.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
