@@ -169,39 +169,10 @@ class UnidadeCurricular(models.Model):
     <p>
         Esta secção documenta o processo de desenvolvimento da aplicação — decisões de modelação, erros encontrados e corrigidos, e uso de IA generativa.
     </p>
-    {% for mo in makingofs %}
-        <div class="card" style="flex-direction:column">
-            <div class="card-info">
-                <h3>{{ mo.get_entidade_display }} — {{ mo.titulo }}</h3>
-                <p style="color:#888;font-size:0.85rem">{{ mo.data }}</p>
-                <p>{{ mo.descricao }}</p>
-
-                {% if mo.decisoes.all %}
-                    <h4>Decisões de Modelação</h4>
-                    {% for d in mo.decisoes.all %}
-                        <p><strong>{{ d.titulo }}</strong> — {{ d.justificacao }}</p>
-                    {% endfor %}
-                {% endif %}
-
-                {% if mo.erros.all %}
-                    <h4>Erros & Correções</h4>
-                    {% for e in mo.erros.all %}
-                        <p><strong>Erro:</strong> {{ e.descricao_erro }}<br>
-                        <strong>Correção:</strong> {{ e.correcao_aplicada }}</p>
-                    {% endfor %}
-                {% endif %}
-
-                {% if mo.usos_ia.all %}
-                    <h4>Uso de IA</h4>
-                    {% for ia in mo.usos_ia.all %}
-                        <p><strong>{{ ia.ferramenta }}</strong> — {{ ia.descricao_uso }}</p>
-                    {% endfor %}
-                {% endif %}
-            </div>
-        </div>
-    {% empty %}
-        <p>Nenhum making of registado ainda. <a href="/admin/portfolio/makingof/add/">Adicionar no admin</a></p>
-    {% endfor %}
+    {% load static %}
+    <a class="btn btn-primary" href="{% url 'download_making_of' %}" download>
+        Descarregar Making Of
+    </a>
 </section>
 
 {% endblock %}

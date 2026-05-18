@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ProjetoForm, TecnologiaForm, CompetenciaForm, FormacaoForm
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
+from django.http import FileResponse
+import os
 from .models import (
     Tecnologia, Projeto, Competencia, Conquista,
     Formacao, Licenciatura, Docente, UnidadeCurricular, TFC
@@ -178,3 +180,9 @@ def sobre_view(request):
         'makingofs': makingofs,
         'tecnologias': tecnologias,
     })
+
+# MAKING OF-----------------------------------
+
+def download_making_of(request):
+    path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'docs', 'making_of.docx')
+    return FileResponse(open(path, 'rb'), as_attachment=True, filename='making_of.docx')    

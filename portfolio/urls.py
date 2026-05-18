@@ -30,4 +30,6 @@ urlpatterns = [
     path('ucs/', views.ucs_view, name='ucs'),
     path('tfcs/', views.tfcs_view, name='tfcs'),
     path('sobre/', views.sobre_view, name='sobre'),
+
+    path('making-of/download/', views.download_making_of, name='download_making_of'),
 ]
